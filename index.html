@@ -21,23 +21,45 @@
     <div class="relative overflow-x-hidden w-full">
       <!---------------------top banner-->
       <div class="w-full h-[52px] bg-white relative">
-
-        <!------------left images-->
-        <div class="absolute top-0 bottom-0 left-0 border-b-[52px] border-b-lightBlue border-r-[40px] border-r-transparent z-[14]"></div>
-        <div class="hidden lg:block w-2 h-[52px] bg-[#C4DDF9] skew-x-[38deg] absolute left-5 z-[12]"></div>
-        <div class="w-[120px] h-[52px] bg-[#E7F1FD] skew-x-[38deg] absolute z-[10] left-4 lg:left-6"></div>
-        <div class="w-[140px] h-[52px] bg-[#F3F8FE] skew-x-[38deg] absolute z-[12] left-[4rem] lg:left-[9rem]"></div>
-        <!------------center content-->
-        <div class="flex flex-row -translate-x-1/2 w-full justify-center items-center -translate-y-1/2 top-1/2 left-1/2 absolute space-x-4">
-          <p class="hidden lg:block font-mullish">RazorpayX Payroll: 3 Clicks, Payroll Fixed! Automate payroll now!</p>
-          <button class="py-[10px] px-4 bg-lightBlue text-white font-mullish font-bold text-xs rounded-md"><a href="">Know More</a></button>
+        <div
+          class="w-0 h-0 absolute top-0 bottom-0 left-0 border-b-[52px] border-b-lightBlue border-r-[40px] border-r-transparent z-[14]"
+        ></div>
+        <div
+          class="hidden lg:block w-2 h-[52px] bg-[#C4DDF9] skew-x-[38deg] absolute left-5 z-[12]"
+        ></div>
+        <div
+          class="w-[120px] h-[52px] bg-[#E7F1FD] skew-x-[38deg] absolute z-[10] left-4 lg:left-6"
+        ></div>
+        <div
+          class="w-[140px] h-[52px] bg-[#F3F8FE] skew-x-[38deg] absolute z-[12] left-[4rem] lg:left-[9rem]"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/2 z-[1000] w-full -translate-x-1/2 -translate-y-1/2 flex justify-center items-center space-x-4"
+        >
+          <p class="hidden lg:block font-mullish">
+            RazorpayX Payroll: 3 Clicks, Payroll Fixed! Automate payroll now!
+          </p>
+          <p class="block lg:hidden font-mullish text-xs md:text-[14px]">
+            Automate Payroll in just 3 clicks now!
+          </p>
+          <button
+            class="py-[10px] px-4 bg-lightBlue text-white font-mullish font-bold text-xs rounded-md"
+          >
+            Know More
+          </button>
         </div>
-        
-        <!-------------right images-->
-        <div class="absolute top-0 bottom-0 right-0 border-t-[52px] border-t-lightBlue border-l-[40px] border-l-transparent z-[14]"></div>
-        <div class="hidden lg:block w-2 h-[52px] bg-[#C4DDF9] skew-x-[38deg] absolute right-5 z-[12]"></div>
-        <div class="w-[120px] h-[52px] bg-[#E7F1FD] skew-x-[38deg] absolute z-[10] right-4 lg:right-6"></div>
-        <div class="w-[140px] h-[52px] bg-[#F3F8FE] skew-x-[38deg] absolute z-[12] right-[4rem] lg:right-[9rem]"></div>
+        <div
+          class="w-[140px] h-[52px] bg-[#F3F8FE] skew-x-[38deg] absolute z-[12] right-[4rem] lg:right-[9rem]"
+        ></div>
+        <div
+          class="w-[120px] h-[52px] bg-[#E7F1FD] skew-x-[38deg] absolute z-[10] right-4 lg:right-6"
+        ></div>
+        <div
+          class="hidden lg:block w-2 h-[52px] bg-[#C4DDF9] skew-x-[38deg] absolute right-5 z-[12]"
+        ></div>
+        <div
+          class="w-0 h-0 absolute top-0 bottom-0 right-0 border-t-[52px] border-t-lightBlue border-l-[40px] border-l-transparent z-[14]"
+        ></div>
       </div>
 
 
@@ -50,7 +72,7 @@
           <a href="#" class="cursor-pointer py-7 pr-7 block">
             <img src="./images/logo.svg" width="125px" height="30px" />
           </a>
-          <ul class="flex space-x-6 items-stretch pr-7">
+          <ul class="space-x-6 items-stretch pr-7 hidden lg:flex">
             <li
               class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration:200 relative group"
             >
@@ -104,7 +126,7 @@
           </ul>
 
           <div class="flex items-center space-x-3">
-            <img src="./images/india-flag.svg" height="20px" width="28px" />
+            <img src="./images/india-flag.svg" height="20px" width="28px" class="hidden lg:block"/>
             <button
               class="py-3 px-5 font-mullish text-white border-lightBlue border rounded-sm text-sm font-bold"
             >
@@ -112,7 +134,7 @@
             </button>
 
             <button
-              class="bg-white py-3 px-4 font-mullish text-sm font-bold rounded-sm text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500 flex"
+              class="bg-white py-3 px-4 font-mullish text-sm font-bold rounded-sm text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500 hidden lg:flex"
             >
               Sign Up
               <svg
@@ -126,13 +148,17 @@
                 ></path>
               </svg>
             </button>
+            <i
+            data-feather="menu"
+            class="text-white text-xs cursor-pointer lg:hidden"
+          ></i>
           </div>
         </div>
       </nav>
       <!-------HERO-SECTION -->
       <section class="relative bg-deepBlue">
         <div
-          class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto"
+          class="w-10/12 max-w-[1080px] flex lg:flex-row flex-col justify-between items-center mx-auto"
         >
           <!---left part-->
           <div class="space-y-8">
@@ -210,7 +236,7 @@
                 Supercharge your business with the all‑powerful
                 <span class="text-lightBlue">Payment Gateway</span>
               </h3>
-              <ul class="space-y-2">
+              <ul class="space-y-2 my-6 md:my-0">
                 <li class="font-mullish flex items-center space-x-2">
                   <i data-feather="check" class="text-greenLight"></i>
                   <span>100+ Payment Methods</span>
@@ -238,10 +264,10 @@
               </ul>
 
               <!--------button and link-->
-              <div class="flex space-x-4">
+              <div class="flex flex-col-reverse md:flex-row space-x-4">
                 <!----------->
                 <button
-                  class="text-white bg-lightBlue w-fit py-[14px] px-[18px] flex rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200"
+                  class="text-white bg-lightBlue md:w-fit w-full py-[14px] px-[18px] flex items-center justify-center rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200"
                 >
                   Sign up Now
                   <i data-feather="arrow-right" class="w-4 h-4 my-1 mx-1"></i>
@@ -262,7 +288,7 @@
             <img
               src="./images/payment-suite.png"
               alt=""
-              class="absolute max-w-[600px] right-0 bottom-0"
+              class="absolute lg:max-w-[600px] lg:block md:block right-0 bottom-0 hidden md:max-w-[400px]"
             />
           </div>
 
